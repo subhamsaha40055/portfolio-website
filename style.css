@@ -100,8 +100,10 @@ p {
 
 /* Navigation Buttons */
 .nav-buttons {
-    text-decoration: none;
     margin-top: 20px;
+}
+.nav-buttons a {
+    text-decoration:none;
 }
 .nav-buttons .btn {
     display: inline-block;
