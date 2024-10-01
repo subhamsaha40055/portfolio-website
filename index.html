@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
 
@@ -60,6 +61,8 @@
             </ul>
         </div>
     </div>
+    
+      
 </section>
 
 
@@ -101,12 +104,18 @@
    <!-- Contact Section -->
 <section id="contact">
     <h2>Contact Me</h2>
-    <form>
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
+    <form action="https://formspree.io/f/xpwavkbo" method="POST">
+  <label>
+    Your email :
+    <input type="email" name="email" placeholder="Your email id">
+  </label>
+  <label>
+    Your message :
+    <textarea name="message" placeholder="your message write here."></textarea>
+  </label>
+  <!-- your other form fields go here -->
+    <button type="submit">Send</button>
+</form>
 <!-- Social Media Buttons -->
 <div class="social-buttons">
     <a href='https://www.facebook.com/profile.php?id=100040980070263&mibextid=ZbWKwL' target="_blank"><i class='bx bxl-facebook-circle'></i> </a>
@@ -117,6 +126,7 @@
 </div>
 </section>
 <!-- Footer Section with Copyright -->
+
 <footer class="footer">
     <p>&copy; 2024 Subham Saha. All Rights Reserved.</p>
     <p>This website and its contents, including text, graphics, and design, are the intellectual property of Subham Saha.</p>

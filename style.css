@@ -10,7 +10,7 @@ body {
     color: #ffffff;
 }
 .container {
-    width: 90%;
+    width: 95%;
     margin: auto;
     padding: 20px;
 }
@@ -102,8 +102,8 @@ p {
 .nav-buttons {
     margin-top: 20px;
 }
-.nav-buttons a {
-    text-decoration:none;
+.nav-buttons a{
+    text-decoration: none;
 }
 .nav-buttons .btn {
     display: inline-block;
@@ -187,9 +187,6 @@ p {
 .projects li strong {
     color: #4caf50;
 }
-
-
-
 /* Education Section */
 /* Certificates Button Styling */
 .certificates-button {
@@ -223,6 +220,9 @@ p {
     cursor: pointer;
    
 }
+#education h2{
+    line-height: 2.3;
+}
 #education:hover {
     background-color: #222222;
     transform: scale(1.05);
@@ -250,8 +250,11 @@ p {
     font-size: 1.15rem;
     line-height: 1.6;
 }
-
+#about h2{
+    line-height: 2.3;
+}
 #about {
+
     padding: 50px 0;
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
@@ -276,7 +279,7 @@ p {
     border-radius: 25px;
     text-decoration: none;
     font-size: 18px;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
 
 .cv-button .btn:hover {
@@ -284,54 +287,101 @@ p {
     transform: scale(1.05);
     border: 2px solid #4caf50;
     box-shadow: 0px 0px 15px rgba(76, 175, 80, 0.8);
+   
 }
  
   
 
 /* Contact Section */
 #contact {
-    padding: 50px 0;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    background-color:#121212; /* Dark background */
+    color: #f5f5f5;             /* Light font color */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2e2e2e;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+form label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+}
+
+form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #4caf50; /* Green background */
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 1.2rem;
     cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #388e3c;
+    transform: scale(1.0003);
+    border: 2px solid #4caf50;
+    box-shadow: 0px 0px 15px rgba(76, 175, 80, 0.8);
 }
 #contact:hover {
     background-color: #222222;
-    transform: scale(1.05);
+    transform: scale(1.0366);
     box-shadow: 0px 0px 15px rgba(76, 175, 80, 0.8);
-}
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 500px;
-    margin: auto;
-}
-input, textarea {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-}
-textarea {
-    height: 100px;
-}
-.submit{
-    color: #4caf50;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
 /* Social Media Buttons Styling */
 .social-buttons {
     text-align: center;
     margin-top: 30px;
+    border-radius: 50%;
 }
 
 .social-buttons a {
-    text-decoration: none;
     margin: 0 15px;
+    
+    text-decoration: none;
     font-size: 2.5em; /* Increased size of icons */
     color: #4caf50; /* Green color */
     transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
 
 .social-buttons a:hover {
+    text-decoration: none;
     transform: scale(1.2); /* Slightly increase size on hover */
     color: #388e3c; /* Darker green on hover */
     box-shadow: 0px 0px 15px rgba(76, 175, 80, 0.6); /* Shadow effect */
@@ -339,6 +389,7 @@ textarea {
 
 .social-buttons i {
     vertical-align: middle;
+    
 }
 /* Footer Styling */
 .footer {
