@@ -1,0 +1,47 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "about"
+    label: "About Me"
+    file: "content/about.md"
+    fields:
+      - { label: "About Description", name: "body", widget: "markdown" }
+
+  - name: "skills"
+    label: "Skills"
+    file: "content/skills.md"
+    fields:
+      - label: "Skills List"
+        name: "skills"
+        widget: "list"
+        field: { label: "Skill", name: "skill", widget: "string" }
+
+  - name: "projects"
+    label: "Projects"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Project Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "GitHub Link", name: "github", widget: "string", required: false }
+      - { label: "Live Demo", name: "demo", widget: "string", required: false }
+
+  - name: "education"
+    label: "Education"
+    file: "content/education.md"
+    fields:
+      - { label: "Education Details", name: "body", widget: "markdown" }
+
+  - name: "contact"
+    label: "Contact"
+    file: "content/contact.md"
+    fields:
+      - { label: "Email", name: "email", widget: "string" }
+      - { label: "Message Info", name: "message", widget: "text" }
